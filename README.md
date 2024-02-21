@@ -1,27 +1,38 @@
 # EthnocraftFrontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+### EthnoCraft Angular App Components
 
-## Development server
+#### Home Component
+- **Introduction**: Welcomes users with EthnoCraft's mission.
+- **Featured Artisans**: Showcases artisans with visuals and brief intros.
+- **Highlighted Crafts**: Displays selected crafts for quick shopping.
+- **Upcoming Workshops**: Lists upcoming workshops with registration links.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#### Artisan Component
+- **Biographies**: Provides artisan stories and backgrounds.
+- **Techniques**: Highlights traditional crafting methods.
+- **Product Gallery**: Shows artisan products with shop links.
+- **Cultural Significance**: Details the importance of each craft.
 
-## Code scaffolding
+#### Shop Component
+- **Product Listings**: Offers crafts sorted by various criteria.
+- **Cultural Insights**: Includes stories and history with each product.
+- **Search and Filter**: Enhances product discovery.
+- **Educational Content**: Integrates learning resources about crafts.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Workshop Component
+- **Schedule**: Features a calendar of upcoming workshops.
+- **Registration**: Simplifies signing up and payment.
+- **Past Workshops**: Grants access to previous workshop materials.
+- **Interactive Features**: Encourages live participation and community discussion.
 
-## Build
+#### About Us Component
+- **Mission and Team**: Outlines EthnoCraft’s goals and introductions to the team.
+- **Contact Information**: Provides direct lines for inquiries and support.
+- **Community Engagement**: Describes ways users can contribute or get involved.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### Login & Register Component
+- **Artisans/Businesses Form**: Collects detailed information for registration.
+- **Customers Form**: Gathers basic info and preferences.
+- **Secure Login**: Ensures safe access with recovery options.
+- **User Dashboard**: Offers personalized spaces for artisans and customers.
