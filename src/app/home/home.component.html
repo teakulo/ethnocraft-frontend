@@ -1,1 +1,21 @@
-<p>home works!</p>
+<div class="hero-section">
+  <h1>Welcome to EthnoCraft</h1>
+  <p>Exploring and preserving the beauty of Bosnian and Herzegovinian crafts.</p>
+</div>
+
+<div class="about-section">
+  <h2>About EthnoCraft</h2>
+  <p>EthnoCraft is dedicated to showcasing the rich cultural heritage of Bosnia and Herzegovina through traditional crafts.</p>
+</div>
+
+<div class="featured-artisans">
+  <h2>Featured Artisans</h2>
+  <div class="artisan" *ngFor="let artisan of artisans">
+    <h3>{{artisan.name}}</h3>
+    <p>{{artisan.description}}</p>
+  </div>
+</div>
+
+<footer>
+  <p>© EthnoCraft - Preserving Tradition</p>
+</footer>
