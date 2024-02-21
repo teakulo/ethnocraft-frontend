@@ -1,54 +1,88 @@
+/* Navigation Bar Styling */
+nav {
+  background-color: #5e5551; /* Muted dark brown */
+  color: #f9f6f1;
+  display: flex;
+  justify-content: space-evenly; /* Distribute space evenly */
+  padding: 20px 0; /* Increase padding for more vertical space */
+  list-style-type: none; /* Remove bullet points */
+}
+
+nav a {
+  color: #f9f6f1;
+  text-decoration: none;
+  padding: 0 20px; /* Add padding for more space between links */
+}
+
+nav a:hover {
+  color: #dcd0c0; /* Hover effect */
+}
+
+/* Ensure <ul> within <nav> also has no list-style */
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Base styling */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Playfair Display', serif; /* Elegant and traditional */
+  color: #3a3532; /* Deep, muted brown for text */
+  background-color: #f9f6f1; /* Soft, muted cream for a warm backdrop */
   margin: 0;
   padding: 0;
 }
 
+/* Hero section */
 .hero-section {
-  background-color: #f4f4f4;
+  background-color: #8d847d; /* Muted dark taupe, luxurious */
+  color: #dcd0c0; /* Soft, muted cream for text */
+  padding: 60px 20px;
   text-align: center;
-  padding: 50px 20px;
 }
 
-.about-section, .featured-artisans {
-  text-align: center;
-  padding: 20px;
+.hero-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
 }
 
+.hero-section p {
+  font-size: 1.2rem;
+}
+
+/* About section */
+.about-section {
+  background-color: #dcd0c0; /* Soft, muted cream */
+  color: #5e5551; /* Muted dark brown */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Featured artisans */
 .featured-artisans {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  padding: 40px 20px;
+  background-color: #f9f6f1; /* Matching the body's background for coherence */
 }
 
 .artisan {
-  margin: 10px;
-  flex-basis: 20%;
+  background-color: #eae5e0; /* Very light taupe */
+  border: 1px solid #8d847d; /* Muted dark taupe for border */
+  margin: 20px 0;
   padding: 20px;
-  box-shadow: 0 0 5px #ccc;
 }
 
-.artisan img {
-  max-width: 100%;
-  height: auto;
+.artisan h3 {
+  color: #3a3532; /* Deep, muted brown */
 }
 
+/* Footer */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #5e5551; /* Muted dark brown */
+  color: #dcd0c0; /* Soft, muted cream for text */
   text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-@media (max-width: 600px) {
-  .featured-artisans {
-    flex-direction: column;
-  }
-
-  .artisan {
-    flex-basis: 80%;
-  }
+  padding: 20px;
+  font-size: 0.9rem;
 }
