@@ -8,7 +8,9 @@ import { ArtisanComponent } from './artisan/artisan.component';
 import { ShopComponent } from './shop/shop.component';
 import { WorkshopComponent } from './workshop/workshop.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { LoginRegisterComponent } from './login-register/login-register.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterUserComponent } from './register-user/register-user.component';
+import { RegisterArtisanComponent } from './register-artisan/register-artisan.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { LoginRegisterComponent } from './login-register/login-register.componen
     ShopComponent,
     WorkshopComponent,
     AboutUsComponent,
-    LoginRegisterComponent
+    LoginComponent,
+    RegisterUserComponent,
+    RegisterArtisanComponent
   ],
   imports: [
     BrowserModule,

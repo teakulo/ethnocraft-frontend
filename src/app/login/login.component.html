@@ -1,0 +1,15 @@
+<!-- login.component.html -->
+
+<div class="login-container">
+  <div class="logo">EthnoCraft</div>
+  <div class="input-group">
+    <input type="text" placeholder="Username">
+  </div>
+  <div class="input-group">
+    <input type="password" placeholder="Password">
+  </div>
+  <button (click)="login()">Login</button>
+  <p>Don't have an account? <a routerLink="/register-user" class="signup-link">Sign up as user</a></p>
+  <p><a routerLink="/register-artisan" class="signup-link">Sign up as artisan</a></p>
+</div>
+

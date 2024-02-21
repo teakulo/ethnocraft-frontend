@@ -5,7 +5,9 @@ import { ArtisanComponent } from './artisan/artisan.component';
 import { ShopComponent } from './shop/shop.component';
 import { WorkshopComponent } from './workshop/workshop.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { LoginRegisterComponent } from './login-register/login-register.component';
+import { LoginComponent } from './login/login.component';
+import {RegisterUserComponent} from "./register-user/register-user.component";
+import {RegisterArtisanComponent} from "./register-artisan/register-artisan.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,7 +15,9 @@ const routes: Routes = [
   { path: 'shop', component: ShopComponent },
   { path: 'workshop', component: WorkshopComponent },
   { path: 'about-us', component: AboutUsComponent },
-  { path: 'login', component: LoginRegisterComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'register-user', component: RegisterUserComponent },
+  { path: 'register-artisan', component: RegisterArtisanComponent }
 ];
 
 @NgModule({

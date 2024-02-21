@@ -1,3 +1,14 @@
+<div class="app-container">
+  <nav *ngIf="showNav">
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/artisan">Artisan</a></li>
+      <li><a routerLink="/shop">Shop</a></li>
+      <li><a routerLink="/workshop">Workshop</a></li>
+      <li><a routerLink="/about-us">About Us</a></li>
+      <li><a routerLink="/login">Login/Register</a></li>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
 
-
-<router-outlet></router-outlet>
