@@ -1,0 +1,54 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.about-section, .featured-artisans {
+  text-align: center;
+  padding: 20px;
+}
+
+.featured-artisans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.artisan {
+  margin: 10px;
+  flex-basis: 20%;
+  padding: 20px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.artisan img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .featured-artisans {
+    flex-direction: column;
+  }
+
+  .artisan {
+    flex-basis: 80%;
+  }
+}
