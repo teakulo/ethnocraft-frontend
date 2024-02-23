@@ -1,0 +1,49 @@
+/* Styles for the shop page */
+.shop-container {
+  background-color: #F5F1E3;
+  padding: 60px 10%;
+  color: #4E3E4F;
+}
+
+.shop-container h2 {
+  color: #8B4513; /* SaddleBrown */
+  margin-bottom: 20px;
+}
+
+.shop-container .product {
+  border: 1px solid #8B4513; /* SaddleBrown */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.shop-container .product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.shop-container .product h3 {
+  color: #8B4513; /* SaddleBrown */
+  margin-bottom: 10px;
+}
+
+.shop-container .product p {
+  margin-bottom: 10px;
+}
+
+.shop-container .product button {
+  background-color: #8B4513; /* SaddleBrown */
+  color: #F5F1E3; /* Warm off-white */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.shop-container .product button:hover {
+  background-color: #DAA520; /* Gold */
+}
+
+.product img {
+  width: 300px; /* or any size you prefer */
+  height: auto; /* maintains the aspect ratio */
+}

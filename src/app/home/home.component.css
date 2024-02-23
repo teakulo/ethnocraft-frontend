@@ -1,88 +1,126 @@
-/* Navigation Bar Styling */
-nav {
-  background-color: #5e5551; /* Muted dark brown */
-  color: #f9f6f1;
-  display: flex;
-  justify-content: space-evenly; /* Distribute space evenly */
-  padding: 20px 0; /* Increase padding for more vertical space */
-  list-style-type: none; /* Remove bullet points */
-}
-
-nav a {
-  color: #f9f6f1;
-  text-decoration: none;
-  padding: 0 20px; /* Add padding for more space between links */
-}
-
-nav a:hover {
-  color: #dcd0c0; /* Hover effect */
-}
-
-/* Ensure <ul> within <nav> also has no list-style */
-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-/* Base styling */
+/* General Styles */
 body {
-  font-family: 'Playfair Display', serif; /* Elegant and traditional */
-  color: #3a3532; /* Deep, muted brown for text */
-  background-color: #f9f6f1; /* Soft, muted cream for a warm backdrop */
+  font-family: 'Times New Roman', serif;
+  color: #4E3E4F; /* Warm dark grey */
+  background-color: #F5F1E3; /* Warm off-white */
   margin: 0;
   padding: 0;
 }
 
-/* Hero section */
+a {
+  text-decoration: none;
+  color: #DAA520; /* Gold */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #B8860B; /* Dark gold */
+}
+
+/* Hero Section */
 .hero-section {
-  background-color: #8d847d; /* Muted dark taupe, luxurious */
-  color: #dcd0c0; /* Soft, muted cream for text */
-  padding: 60px 20px;
+  /*background-image: url('src/assets/pattern2.webp');*/
+  background-color: lemonchiffon;
+  color: #F5F1E3;
   text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.hero-section h1, .hero-section p {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-section h1 {
-  font-size: 2.8rem;
+  font-size: 2.5em;
   margin-bottom: 20px;
+  display: inline-block;
+  padding: 10px;
+  color: #5e5551;
 }
 
 .hero-section p {
-  font-size: 1.2rem;
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: auto;
+  padding: 10px;
+  color: #5e5551;
+
 }
 
-/* About section */
+/* About Section */
 .about-section {
-  background-color: #dcd0c0; /* Soft, muted cream */
-  color: #5e5551; /* Muted dark brown */
-  padding: 40px 20px;
-  text-align: center;
+  background-color: #F5F1E3;
+  padding: 60px 10%;
+  color: #4E3E4F;
 }
 
-/* Featured artisans */
+.about-section h2 {
+  color: #8B4513; /* SaddleBrown */
+  border-bottom: 2px solid #DAA520; /* Gold */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Featured Artisans */
 .featured-artisans {
-  padding: 40px 20px;
-  background-color: #f9f6f1; /* Matching the body's background for coherence */
+  padding: 60px 10%;
 }
 
-.artisan {
-  background-color: #eae5e0; /* Very light taupe */
-  border: 1px solid #8d847d; /* Muted dark taupe for border */
-  margin: 20px 0;
+.featured-artisans .artisan {
+  background-color: #F5F1E3;
+  border: 1px solid #8B4513; /* SaddleBrown */
+  margin-bottom: 20px;
   padding: 20px;
+  transition: transform 0.3s ease;
 }
 
-.artisan h3 {
-  color: #3a3532; /* Deep, muted brown */
+.featured-artisans .artisan:hover {
+  transform: translateY(-5px);
+}
+
+.featured-artisans h2 {
+  color: #8B4513; /* SaddleBrown */
+  border-bottom: 2px solid #DAA520; /* Gold */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /* Footer */
 footer {
-  background-color: #5e5551; /* Muted dark brown */
-  color: #dcd0c0; /* Soft, muted cream for text */
+  background-color: #937159; /* Warm dark grey */
+  color: #F5F1E3; /* Warm off-white */
   text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
+  padding: 20px 0;
+  font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2em;
+  }
+
+  .hero-section p, .about-section p, .featured-artisans p {
+    font-size: 1em;
+  }
 }
