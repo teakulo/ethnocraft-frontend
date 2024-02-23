@@ -1,0 +1,22 @@
+/* Navigation */
+nav {
+  background-color: #937159;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #F5F1E3; /* Warm off-white */
+  font-weight: bold;
+}

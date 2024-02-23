@@ -1,0 +1,20 @@
+/* Styles for the artisan profile page */
+.artisan-profile-container {
+  background-color: #F5F1E3;
+  padding: 60px 10%;
+  color: #4E3E4F;
+}
+
+.artisan-profile-container .artisan-info {
+  border: 1px solid #8B4513; /* SaddleBrown */
+  padding: 20px;
+}
+
+.artisan-profile-container .artisan-info h2 {
+  color: #8B4513; /* SaddleBrown */
+  margin-bottom: 20px;
+}
+
+.artisan-profile-container .artisan-info p {
+  margin-bottom: 10px;
+}
